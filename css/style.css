@@ -3,5 +3,21 @@
 }
 
 body {
-    background-color: orange;
+    background-color: #f9d195;
 }
+
+textarea {
+    resize: none;
+}
+
+.grupoForm {
+    padding-bottom: 1em;
+}
+
+.form-control{
+    border-color: slategrey;
+}
+.form-control:focus {
+    border-color: black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px gray;
+  }
