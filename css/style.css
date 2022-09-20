@@ -2,7 +2,7 @@
     background-color: white;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 body {
@@ -36,6 +36,7 @@ textarea {
 
 .c-cardapio {
     border: none;
+    height: 100%;
 }
 
 .card-text{
@@ -44,4 +45,8 @@ textarea {
 
 .card-title{
     font-size: 1.5rem;
+}
+
+.d_membro{
+    margin-top: 3rem;
 }
