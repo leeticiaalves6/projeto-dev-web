@@ -1,12 +1,16 @@
+:root {
+    --container-color: #f9d195;
+}
+
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.862);
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
 }
 
 body {
-    background-color: #f9d195;
+    background-color: var(--container-color);
 }
 
 textarea {
@@ -30,7 +34,7 @@ textarea {
     padding: 2.5rem;
 }
 
-.preco{
+.preco {
     font-style: italic;
 }
 
@@ -39,14 +43,43 @@ textarea {
     height: 100%;
 }
 
-.card-text{
+.card-text {
     font-size: 1.2rem;
 }
 
-.card-title{
+.card-title {
     font-size: 1.5rem;
 }
 
-.d_membro{
+.d_membro {
     margin-top: 3rem;
+}
+
+.galeria {
+    border-color: white !important;
+    border-style: dashed !important;
+}
+
+.sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.sociais>a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.sociais>img{
+    max-width: 40%;
+    height: auto;
+}
+
+.sociais {
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+#containerHome {
+    background-color: var(--container-color);
 }
