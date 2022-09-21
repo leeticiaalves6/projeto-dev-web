@@ -1,16 +1,16 @@
 @font-face {
     font-family: museo-slab;
-    src: url(/fonts/Museo_Slab_500.otf);
+    src: url(../fonts/Museo_Slab_500.otf);
 }
 
 :root {
-    --body_color: #f9d195;
+    --back_color: #f9d195;
     --color_14: rgb(104, 57, 26);
     --font_5: normal normal bold 28px/1.4em museo-slab-w01-100, museo-slab-w05-100, serif;
 }
 
 #containerHome {
-    background-color: var(--body_color);
+    background-color: var(--back_color);
 }
 
 .container {
@@ -18,16 +18,16 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    font-family: museo-slab;
     border-radius: 0.5rem;
 }
 
 .container p {
     color: var(--color_14);
+    font-family: museo-slab;
 }
 
 body {
-    background-color: var(--body_color);
+    background-color: var(--back_color);
 }
 
 textarea {
@@ -45,6 +45,10 @@ textarea {
 .form-control:focus {
     border-color: black;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px gray;
+}
+
+#tituloCardapio {
+    border-bottom: 0.01rem dashed black;
 }
 
 .preco {
