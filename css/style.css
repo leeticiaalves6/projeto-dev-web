@@ -1,3 +1,8 @@
+@font-face {
+    font-family: museolab;
+    src: url(/fonts/Museo_Slab_500.otf);
+}
+
 :root {
     --container-color: #f9d195;
 }
@@ -7,6 +12,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
+    font-family: museolab;
 }
 
 body {
@@ -41,6 +47,14 @@ textarea {
 .c-cardapio {
     border: none;
     height: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.membros {
+    height: 100%;
+    max-width: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
 }
 
 .card-text {
@@ -69,8 +83,10 @@ textarea {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.sociais>img{
-    max-width: 40%;
+
+.sociais>img {
+    object-position: center;
+    max-width: 100%;
     height: auto;
 }
 
