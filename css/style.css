@@ -30,6 +30,12 @@ body {
     background-color: var(--back_color);
 }
 
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 textarea {
     resize: none;
 }
