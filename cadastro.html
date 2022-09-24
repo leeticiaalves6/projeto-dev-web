@@ -16,7 +16,7 @@
 
 <body>
   <!-- MENU -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand" href="home.html">CupCakePop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -36,9 +36,7 @@
   </nav>
 
   <div class="container">
-    <!-- todo ajustar padding entre inputs mesma row -->
-    <!-- todo ajustar py para mobile, menos padding -->
-    <div class="row py-3 px-5">
+    <div class="row py-3 px-5" id="divCadastro">
       <!-- DIV IMG -->
       <div class="col-12">
         <p class="fs-4 fw-bold text-center text-uppercase">Cadastro</p>
@@ -84,8 +82,33 @@
               <label for="estadoFormInput">Estado:</label>
               <select id="estadoFormInput" class="form-control" required>
                 <option selected>Escolha...</option>
-                <option>SP</option>
-                <option>DF</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
               </select>
             </div>
             <div class="form-group col-md-3">
@@ -105,14 +128,14 @@
               Concordo em compartilhar minhas informações aqui fornecidas
             </label>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary" id="btEnviar">Enviar</button>
         </form>
       </div>
     </div>
   </div>
 
   <!-- Copyright -->
-  <div class="text-center p-3 bg-light">
+  <div class="text-center p-3 footer">
     © 2023 Copyright: Unimetrocamp Wyden
   </div>
   <!-- Copyright -->

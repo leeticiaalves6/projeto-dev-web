@@ -5,25 +5,29 @@
 
 :root {
     --back_color: #f9d195;
-    --color_14: rgb(104, 57, 26);
-    --font_5: normal normal bold 28px/1.4em museo-slab-w01-100, museo-slab-w05-100, serif;
+    --font_color: rgb(104, 57, 26);
+    --font_museo: normal normal bold 28px/1.4em museo-slab-w01-100, museo-slab-w05-100, serif;
+    --container_color: #fffcf4;
 }
 
 #containerHome {
-    background-color: var(--back_color);
+    background-color: var(--back_color)!important;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.862);
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
 
-.container p {
-    color: var(--color_14);
+.container p, a {
+    color: var(--font_color);
     font-family: museo-slab;
+}
+
+.navbar, .footer, .container {
+    background-color: var(--container_color)!important;
 }
 
 body {
@@ -80,7 +84,7 @@ textarea {
 }
 
 .card-title {
-    font: var(--font_5);
+    font: var(--font_museo);
     white-space: normal;
 }
 
@@ -126,4 +130,56 @@ textarea {
     border: none;
     background: rgba(0, 0, 0, 0);
     height: 100%;
+}
+
+#contato {
+    border-top: 0.01rem solid black;
+}
+
+#btEnviar {
+    background-color: var(--font_color);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    #divCadastro {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem !important;
+    }
+
+    .grupoForm>.form-group,
+    .form-check {
+        padding-bottom: 0.5rem !important;
+    }
+
+    .imgGaleria>div>img {
+        padding: 1rem !important;
+    }
+
+    .imgGaleria {
+        padding: 0rem !important;
+    }
+
+    .sociais {
+        padding-bottom: 1.5rem !important;
+    }
+}
+
+/* Tablets Ipads */
+@media (max-width: 1024px) {
+    .d_membro>.card {
+        width: 100% !important;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .container {
+        margin-top: 5rem !important;
+    }
 }
