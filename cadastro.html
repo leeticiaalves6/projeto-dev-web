@@ -18,7 +18,7 @@
   <!-- MENU -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">CupCakePop</a>
+      <a class="navbar-brand" href="home.html">CupCakePop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Menu de navegação com Toggle">
         <span class="navbar-toggler-icon"></span>
@@ -36,50 +36,60 @@
   </nav>
 
   <div class="container">
-    <div class="row pt-4 pb-3">
+    <!-- todo ajustar padding entre inputs mesma row -->
+    <!-- todo ajustar py para mobile, menos padding -->
+    <div class="row py-3 px-5">
       <!-- DIV IMG -->
-      <div class="col-md-4">
-        <img src="imgs/cupcake3.webp" class="img-fluid rounded">
-      </div>
-      <div class="col-md-8 pt-1">
-        <p class="fs-4 text-center text-uppercase">Cadastro</p>
+      <div class="col-12">
+        <p class="fs-4 fw-bold text-center text-uppercase">Cadastro</p>
         <form>
           <!-- INPUT NOME E SOBRENOME  -->
           <div class="row grupoForm">
             <div class="form-group col-md-6">
-              <label for="nomeFormInput">Nome</label>
+              <label for="nomeFormInput">Nome:</label>
               <input type="text" class="form-control" id="nomeFormInput" required>
             </div>
             <div class="form-group col-md-6">
-              <label for="sobrenomeFormInput">Sobrenome</label>
+              <label for="sobrenomeFormInput">Sobrenome:</label>
               <input type="text" class="form-control" id="sobrenomeFormInput" required>
             </div>
           </div>
           <!-- INPUT EMAIL -->
-          <div class="form-group grupoForm">
-            <label for="emailFormInput">Email</label>
-            <input type="email" class="form-control" id="emailFormInput" required>
+          <div class="row grupoForm">
+            <div class="form-group col-md-4">
+              <label for="emailFormInput">Email:</label>
+              <input type="email" class="form-control" id="emailFormInput" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="telefoneFormInput">Telefone:</label>
+              <input type="tel" class="form-control" id="telefoneFormInput" required maxlength="11">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="dataNascFormInput">Data Nascimento:</label>
+              <input type="date" class="form-control" id="dataNascFormInput" maxlength="11">
+            </div>
           </div>
           <!-- INPUT ENDEREÇO  -->
           <div class="form-group grupoForm">
-            <label for="enderecoFormInput">Endereço</label>
+            <label for="enderecoFormInput">Endereço:</label>
             <input type="text" class="form-control" id="enderecoFormInput" required>
           </div>
           <!-- INPUT CIDADE, UF, CEP -->
           <div class="row grupoForm">
             <div class="form-group col-md-5">
-              <label for="cidadeFormInput">Cidade</label>
+              <label for="cidadeFormInput">Cidade:</label>
               <input type="text" class="form-control" id="cidadeFormInput" required>
             </div>
             <div class="form-group col-md-4">
-              <label for="estadoFormInput">Estado</label>
+              <label for="estadoFormInput">Estado:</label>
               <select id="estadoFormInput" class="form-control" required>
                 <option selected>Escolha...</option>
-                <option>...</option>
+                <option>SP</option>
+                <option>DF</option>
               </select>
             </div>
             <div class="form-group col-md-3">
-              <label for="cepFormInput">CEP</label>
+              <label for="cepFormInput">CEP:</label>
               <input type="text" class="form-control" id="cepFormInput" required>
             </div>
           </div>
